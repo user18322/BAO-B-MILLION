@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="VN">
+
+<head>
+    <title>Bao bì Million</title>
+    <style>
+        @keyframes slideOnLeft {
+            from {
+                transform: translateX(0px);
+            }
+
+            25% {
+                opacity: 0.5;
+            }
+
+            50% {
+                opacity: 0.2;
+            }
+
+            to {
+                opacity: 0;
+                transform: translateX(-800px);
+            }
+
+        }
+
+        @keyframes slideOnRight {
+            from {
+                transform: translateX(-0);
+            }
+
+            25% {
+                opacity: 0.5;
+            }
+
+            50% {
+                opacity: 0.2;
+            }
+
+            to {
+                opacity: 0;
+                transform: translateX(800px);
+            }
+        }
+
+        @keyframes Opacity {
+            from {
+                opacity: 0;
+            }
+
+            25% {
+                opacity: 0.3;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .Right {
+            background-color: gray;
+            position: absolute;
+            right: -500px;
+            bottom: -100px;
+
+            width: 1200px;
+            height: 850px;
+            animation: slideOnRight 1s ease-out;
+            animation-delay: 1s;
+            animation-fill-mode: both;
+            transform: translateX(800px);
+            opacity: 1;
+        }
+
+        .Left {
+            background-color: gray;
+            position: absolute;
+            left: -500px;
+            bottom: -100px;
+
+            width: 1200px;
+            height: 850px;
+            animation: slideOnLeft 1s ease-out;
+            animation-delay: 1s;
+            animation-fill-mode: both;
+            transform: translateX(-800px);
+            opacity: 1;
+
+        }
+
+        .Logo {
+            position: absolute;
+            left: 610px;
+            bottom: 5;
+            margin-block: 130px;
+
+
+            width: 150px;
+            height: 150px;
+            animation: Opacity 3s ease-out;
+            animation-delay: 0s;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <img class="Logo" src="images/1mpackaging.jpg" alt="Millionpackaging.com">
+    <img class="Left" src="images/lefthand.png" alt="a left hand of a guy">
+    <img class="Right" src="images/righthand.png" alt="a right hand of a guy">
+    <video autoplay loop src="videos/Untitled-1.mp4"></video>
+</body>
+
+</html>
